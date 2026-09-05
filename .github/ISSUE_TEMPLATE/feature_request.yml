@@ -1,0 +1,44 @@
+name: Feature request / 功能建议
+description: Suggest an improvement or new capability / 提出改进或新功能建议
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Browser Switcher. English and Chinese are both welcome.
+        感谢你帮助改进 Browser Switcher，中文和英文均可。
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need / 问题或需求
+      description: What problem would this feature solve? / 这个功能希望解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution / 建议方案
+      description: Describe how you would like the feature to work. / 请说明你希望这个功能如何工作。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 考虑过的替代方案
+      description: Optional. Tell us about any workarounds or alternatives. / 可选，请说明现有变通方法或其他方案。
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context / 补充信息
+      description: Add examples or screenshots if useful. Do not include sensitive information. / 可附示例或截图，请勿提交敏感信息。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting / 提交前确认
+      options:
+        - label: I searched existing issues for a similar request. / 我已搜索过类似建议。
+          required: true
+        - label: This request is about Browser Switcher for Mac. / 此建议与 Browser Switcher for Mac 有关。
+          required: true
