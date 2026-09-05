@@ -1,0 +1,67 @@
+name: Bug report / 错误报告
+description: Report a reproducible problem with Browser Switcher / 报告可复现的问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. English and Chinese are both welcome.
+        感谢你的反馈，中文和英文均可。
+  - type: input
+    id: app-version
+    attributes:
+      label: Browser Switcher version / 应用版本
+      placeholder: "For example: 1.1 (2)"
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version / macOS 版本
+      placeholder: "For example: macOS 26.0"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version / 浏览器及版本
+      placeholder: "For example: Safari 26, Chrome, Dia, or Ego Lite"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Tell us exactly what you did before the problem occurred. / 请说明问题出现前的操作步骤。
+      placeholder: |
+        1. Open...
+        2. Click...
+        3. See...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result / 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context / 补充信息
+      description: Add screenshots if useful. Do not include passwords, cookies, or private information. / 可附截图，请勿提交密码、Cookie 或隐私信息。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting / 提交前确认
+      options:
+        - label: I searched existing issues for the same problem. / 我已搜索过相同问题。
+          required: true
+        - label: I removed passwords, cookies, account credentials, and private URLs. / 我已移除密码、Cookie、账号凭据和私人网址。
+          required: true
